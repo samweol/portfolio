@@ -1,0 +1,15 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menuItem {
+  padding: 0 10px;
+}
