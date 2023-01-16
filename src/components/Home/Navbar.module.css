@@ -13,3 +13,7 @@
 .menuItem {
   padding: 0 10px;
 }
+
+.menuItem:hover {
+  cursor: pointer;
+}
