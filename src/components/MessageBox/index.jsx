@@ -9,7 +9,6 @@ import styles from "./MessageBox.module.css";
 export default function MessageBox() {
   const navigate = useNavigate();
   const [messages, setMessages] = useState([]);
-  console.log(messages);
   useEffect(() => {
     const fetchMessage = () => {
       const letterRef = ref(database, "letters");
@@ -42,7 +41,7 @@ export default function MessageBox() {
           <div>편지함이 비었습니다.</div>
         )}
       </div>
-      <div>
+      <div className={styles.writeBtn}>
         <button
           onClick={() => {
             navigate("/message/write");

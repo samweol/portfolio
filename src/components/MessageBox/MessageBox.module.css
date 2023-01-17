@@ -6,5 +6,7 @@
 }
 
 .writeBtn {
-  position: relative;
+  display: flex;
+  margin: 10px 50px;
+  justify-content: flex-end;
 }
