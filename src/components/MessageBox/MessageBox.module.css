@@ -3,3 +3,7 @@
   flex-wrap: wrap;
   margin: 0 49px;
 }
+
+.writeBtn {
+  position: relative;
+}
