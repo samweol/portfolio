@@ -18,7 +18,9 @@ export default function WirteMessage() {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    set(ref(database, "letters/" + uuidv4()), {
+    const uid = uuidv4();
+    set(ref(database, "letters/" + uid), {
+      id: uid,
       saver: data.saver,
       content: data.content,
       sender: data.sender,

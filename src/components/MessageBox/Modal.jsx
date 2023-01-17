@@ -2,13 +2,13 @@ import React from "react";
 import styles from "./Modal.module.css";
 
 export default function Modal(props) {
-  const { open, close, sender } = props;
+  const { open, close, sender, saver } = props;
   return (
     <div className={open ? styles.modalBg : null}>
       {open ? (
         <section className={styles.letter}>
           <header className={styles.header}>
-            To. 주예
+            To. {saver}
             <button onClick={close} className={styles.closeBtn}>
               <span>&times;</span>
             </button>
