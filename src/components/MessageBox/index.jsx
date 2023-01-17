@@ -8,7 +8,13 @@ export default function MessageBox() {
     <>
       <Navbar />
       <div className={styles.container}>
-        <Message />
+        <Message content="hello" sender="xxx" />
+        <Message content="hello" sender="xxx" />
+        <Message content="hello" sender="xxx" />
+        <Message content="hello" sender="xxx" />
+        <Message content="hello" sender="xxx" />
+        <Message content="hello" sender="xxx" />
+        <Message content="hello" sender="xxx" />
       </div>
     </>
   );

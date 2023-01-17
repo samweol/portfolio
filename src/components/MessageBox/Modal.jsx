@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Modal.module.css";
 
 export default function Modal(props) {
-  const { open, close } = props;
+  const { open, close, sender } = props;
   return (
     <div className={open ? styles.modalBg : null}>
       {open ? (
@@ -14,6 +14,7 @@ export default function Modal(props) {
             </button>
           </header>
           <main className={styles.content}>{props.children}</main>
+          <footer className={styles.footer}>From. {sender}</footer>
         </section>
       ) : null}
     </div>
