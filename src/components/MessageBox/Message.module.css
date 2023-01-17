@@ -1,0 +1,12 @@
+/* 편지 */
+
+.message {
+  padding: 0 10px;
+  width: 250px;
+  transition: all 0.2s linear;
+}
+
+.message:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
