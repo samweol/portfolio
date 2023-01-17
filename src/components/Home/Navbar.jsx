@@ -8,7 +8,12 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div>
-        <ImBooks />
+        <ImBooks
+          className={styles.menuItem}
+          onClick={() => {
+            navigate("/");
+          }}
+        />
       </div>
       <div></div>
       <div>
